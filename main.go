@@ -46,6 +46,7 @@ func main() {
 	fmt.Printf("GoLogInsight Log Toplayıcı başlatılıyor...\n")
 	fmt.Printf("İzlenecek Dizin: %s\n", config.LogDirectory)
 	fmt.Printf("Dosya Deseni: %s\n", config.FilePattern)
+	fmt.Printf("Dosya Gezgini/Yol: %s\n", config.filePath)
 
 	// Dosya izleyici başlatma
 	watcher, err := fsnotify.NewWatcher()
