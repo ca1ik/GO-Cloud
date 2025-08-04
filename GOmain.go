@@ -22,16 +22,16 @@ type LogEntry struct {
 
 // CollectorConfig, toplayıcının yapılandırma ayarlarını tutar
 type CollectorConfig struct {
-	LogDirectory string        // İzlenecek ana log dizini
-	FilePattern  string        // İzlenecek dosya deseni (örn: "*.log")
+	LogDirectory    string        // İzlenecek ana log dizini
+	FilePattern     string        // İzlenecek dosya deseni (örn: "*.log")
 	PollingInterval time.Duration // Yeni dosyaları kontrol etme aralığı
 }
 
 func main() {
 	// Yapılandırma
 	config := CollectorConfig{
-		LogDirectory: "./logs",     // Örnek log dizini, bu dizini oluşturmanız gerekecek
-		FilePattern:  "*.log",      // Sadece .log uzantılı dosyaları izle
+		LogDirectory:    "./logs",         // Örnek log dizini, bu dizini oluşturmanız gerekecek
+		FilePattern:     "*.log",          // Sadece .log uzantılı dosyaları izle
 		PollingInterval: 10 * time.Second, // 10 saniyede bir yeni dosyaları kontrol et
 	}
 
