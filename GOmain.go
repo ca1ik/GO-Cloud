@@ -10,6 +10,7 @@ import (
 	"strings"
 	"sync"
 	"time"
+
 )
 
 // LogEntry struct'ı, okunacak her log satırını temsil eder
