@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/fsnotify/fsnotify" // Dosya sistemi değişikliklerini izlemek için
 	"io"
 	"log"
 	"os"
