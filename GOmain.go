@@ -11,6 +11,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/fsnotify/fsnotify" // Dosya sistemi değişikliklerini izlemek için
 )
 
 // LogEntry struct'ı, okunacak her log satırını temsil eder
